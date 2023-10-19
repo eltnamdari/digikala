@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./Web/css/all.min.css" />
+    <link rel="stylesheet" href=".//swiper/swiper-bundle.min.css" />
+  </head>
+  <body>
+    <div class="contact"><img src="./media/svgexport-42.svg" alt="" /></div>
+    <div class="banner">
+      <img src="./media/1.webp" alt="" />
+    </div>
+    <div class="w">
+      <div class="d">
+        <img src="./media/2.svg" alt="" />
+        <div class="box">
+          <a href="#"
+            >جستجو <span class="fa-thin fa-magnifying-glass"></span
+          ></a>
+        </div>
+      </div>
+      <div class="d1"></div>
+      <div class="ai">
+        <span class="fa-light fa-cart-shopping"></span>
+        <a href="#">ورود ا ثبت نام</a>
+        <span class="fa-sharp fa-regular fa-arrow-left-to-arc"></span>
+      </div>
+    </div>
+    <div class="menu">
+      <nav>
+        <ul>
+          <li>
+            <span
+              ><img src="./media/svgexport-8.svg" alt="" />دسته بندی کالاها
+            </span>
+            <div class="submenu">
+              <div class="content">
+                <div class="start">
+                  <a href="#">موبایل</a>
+                  <a href="#">کالای دیجیتال</a>
+                  <a href="#">خانه و آشپزی</a>
+                  <a href="#">مدوپوشاک</a>
+                  <a href="#">کالاهای سوپرمارکتی</a>
+                  <a href="#">کتاب,لوازم تحریروهنر</a>
+                  <a href="#">اسباب بازی, کودک ونوزاد</a>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <a href="#"
+              ><img src="./media/svgexport-9.svg" alt="" />شگفت انگیزها
+            </a>
+          </li>
+          <li>
+            <a href="#"
+              ><img src="./media/svgexport-10.svg" alt="" />سوپرمارکت
+            </a>
+          </li>
+          <li>
+            <a href="#"
+              ><img src="./media/svgexport-11.svg" alt="" />کارت هدیه
+            </a>
+          </li>
+          <li>
+            <a href="#"
+              ><img src="./media/svgexport-12.svg" alt="" />پرفروش ترین ها
+            </a>
+          </li>
+          <li>
+            <a href="#"
+              ><img src="./media/svgexport-13.svg" alt="" />تخفیف هاوپیشنهادها
+            </a>
+          </li>
+          <li><a href="#">سوالی دارید؟</a></li>
+          <li><a href="#">در دیجی کالا بفروشید</a></li>
+          <div class="pb">
+            <div class="text">
+              <img
+                src="./media/svgexport-14.svg"
+                alt=""
+              />لطفاشهرخودراانتخابکنید
+            </div>
+          </div>
+        </ul>
+      </nav>
+    </div>
+    <div class="story">
+      <div class="item">
+        <img src="./media/arayeshi.jpg" alt="" />
+        <h2>بهترین قیمت</h2>
+      </div>
+      <div class="item">
+        <img src="./media/Screenshot 2023-08-19 202706.png" alt="" />
+        <h2>ماشین باز</h2>
+      </div>
+      <div class="item">
+        <img src="./media/Screenshot 2023-08-19 202724.png" alt="" />
+        <h2>عطرهای اصل</h2>
+      </div>
+      <div class="item">
+        <img src="./media/Screenshot 2023-08-19 202749.png" alt="" />
+        <h2>صندل جذاب</h2>
+      </div>
+      <div class="item">
+        <img src="./media/Screenshot 2023-08-19 202828.png" alt="" />
+        <h2>برنده شو</h2>
+      </div>
+      <div class="item">
+        <img src="./media/Screenshot 2023-08-19 202847.png" alt="" />
+        <h2>تخفیف ویژه</h2>
+      </div>
+      <div class="item">
+        <img src="./media/Screenshot 2023-08-19 202954.png" alt="" />
+        <h2>مای لیدی</h2>
+      </div>
+      <div class="item">
+        <img src="./media/Screenshot 2023-08-19 203015.png" alt="" />
+        <h2>یادگیری زبان</h2>
+      </div>
+    </div>
+    <!--slider-->
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="./media/s.gif" alt="" /></div>
+        <div class="swiper-slide"><img src="./media/s.webp" alt="" /></div>
+        <div class="swiper-slide"><img src="./media/s2.webp" alt="" /></div>
+        <div class="swiper-slide"><img src="./media/s3.webp" alt="" /></div>
+        <div class="swiper-slide"><img src="./media/s4.webp" alt="" /></div>
+        <div class="swiper-slide"><img src="./media/s6.webp" alt="" /></div>
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
+    </div>
+
+    <!--end slider-->
+
+    <script src="./swiper/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        spaceBetween: 30,
+        centeredSlides: true,
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+    <div class="full">
+      <div class="col">
+        <img src="./media/svgexport-20.svg" alt="" />
+        <h2>بیشتر</h2>
+      </div>
+      <div class="c1">
+        <img src="./media/jet.png" alt="" />
+        <h2>دیجی کالاجت</h2>
+      </div>
+      <div class="c1">
+        <img src="./media/style.png" alt="" />
+        <h2>حراج استایل</h2>
+      </div>
+      <div class="c1">
+        <img src="./media/pay.png" alt="" />
+        <h2>دیجی پی</h2>
+      </div>
+      <div class="c1">
+        <img src="./media/buy.png" alt="" />
+        <h2>خریدعمده وسازمانی</h2>
+      </div>
+      <div class="c1">
+        <img src="./media/send.png" alt="" />
+        <h2>شیوه های ارسال</h2>
+      </div>
+      <div class="c1">
+        <img src="./media/bazar.png" alt="" />
+        <h2>این طرف بازار</h2>
+      </div>
+      <div class="c1">
+        <img src="./media/digi.png" alt="" />
+        <h2>من ودیجی کالا</h2>
+      </div>
+    </div>
+    <!--shgft-->
+    <section class="shgft">
+      <div class="swiper mySwiper2">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide z1">
+            <img src="./media/svgexport-22.svg" alt="" class="logo1" />
+            <img src="./media/box.webp" alt="" class="logo1" />
+            <br />
+            <a href="#">مشاهده همه</a>
+          </div>
+          <div class="swiper-slide second">
+            <img src="./media/p1.webp" alt="" />
+            <div class="content4">
+              <div class="price">
+                <img src="./media/svgexport-21.svg" alt="" />
+                <h4>1.675.000</h4>
+              </div>
+              <span>36%</span>
+            </div>
+            <h5>2.620.000</h5>
+          </div>
+          <div class="swiper-slide">
+            <img src="./media/p2.webp" alt="" />
+            <div class="content4">
+              <div class="price">
+                <img src="./media/svgexport-21.svg" alt="" />
+                <h4>2.030.000</h4>
+              </div>
+              <span>28%</span>
+            </div>
+            <h5>2.800.000</h5>
+          </div>
+          <div class="swiper-slide">
+            <img src="./media/p3.webp" alt="" />
+            <div class="content4">
+              <div class="price">
+                <img src="./media/svgexport-21.svg" alt="" />
+                <h4>179.000</h4>
+              </div>
+              <span>22%</span>
+            </div>
+            <h5>230.000</h5>
+          </div>
+          <div class="swiper-slide">
+            <img src="./media/p10.webp" alt="" />
+            <div class="content4">
+              <div class="price">
+                <img src="./media/svgexport-21.svg" alt="" />
+                <h4>1.375.000</h4>
+              </div>
+              <span>35%</span>
+            </div>
+            <h5>2.100.000</h5>
+          </div>
+          <div class="swiper-slide">
+            <img src="./media/p5.webp" alt="" />
+            <div class="content4">
+              <div class="price">
+                <img src="./media/svgexport-21.svg" alt="" />
+                <h4>190.000</h4>
+              </div>
+              <span>68%</span>
+            </div>
+            <h5>590.000</h5>
+          </div>
+          <div class="swiper-slide">
+            <img src="./media/p6.webp" alt="" />
+            <div class="content4">
+              <div class="price">
+                <img src="./media/svgexport-21.svg" alt="" />
+                <h4>1.231.000</h4>
+              </div>
+              <span>30%</span>
+            </div>
+            <h5>2.655.000</h5>
+          </div>
+          <div class="swiper-slide">
+            <img src="./media/p7.webp" alt="" />
+            <div class="content4">
+              <div class="price">
+                <img src="./media/svgexport-21.svg" alt="" />
+                <h4>1.600.000</h4>
+              </div>
+              <span>26%</span>
+            </div>
+            <h5>2.720.000</h5>
+          </div>
+          <div class="swiper-slide">
+            <img src="./media/p8.webp" alt="" />
+            <div class="content4">
+              <div class="price">
+                <img src="./media/svgexport-21.svg" alt="" />
+                <h4>1.905.000</h4>
+              </div>
+              <span>30%</span>
+            </div>
+            <h5>2.000.000</h5>
+          </div>
+          <div class="swiper-slide last">
+            <img src="./media/p9.webp" alt="" />
+            <div class="content4">
+              <div class="price">
+                <img src="./media/svgexport-21.svg" alt="" />
+                <h4>1.675.000</h4>
+              </div>
+              <span>36%</span>
+            </div>
+            <h5>2.620.000</h5>
+          </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+    </section>
+
+    <script>
+      var swiper = new Swiper(".mySwiper2", {
+        slidesPerView: 5,
+        spaceBetween: 6,
+        freeMode: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+    <!--swiper js-->
+    <div class="wrap">
+      <img src="./media/z4.webp" alt="" />
+      <img src="./media/z1.webp" alt="" />
+      <img src="./media/z3.webp" alt="" />
+      <img src="./media/p7.webp" alt="" />
+    </div>
+    <div class="full3">
+      <h3>دسته بندی های دیجی کالا</h3>
+      <a href=""
+        ><img src="./media/d1.webp" alt="" />
+        <p>موبایل</p></a
+      >
+      <a href=""
+        ><img src="./media/d2.webp" alt="" />
+        <p>کالای دیجیتال</p></a
+      >
+      <a href=""
+        ><img src="./media/d3.webp" alt="" />
+        <p>خانه وآشپزخانه</p></a
+      >
+      <a href=""
+        ><img src="./media/d4.webp" alt="" />
+        <p>مدوپوشاک</p></a
+      >
+      <a href=""
+        ><img src="./media/d5.webp" alt="" />
+        <p>کالاهای سوپرمارکتی</p></a
+      >
+      <a href=""
+        ><img src="./media/d6.webp" alt="" />
+        <p>کتاب,لوازم تحریروهنر</p></a
+      >
+      <a href=""
+        ><img src="./media/d7.webp" alt="" />
+        <p>اسباب بازی</p></a
+      >
+      <a href=""
+        ><img src="./media/d11.webp" alt="" />
+        <p>خودرو,موتورسیکلت</p></a
+      >
+      <a href=""
+        ><img src="./media/d3.webp" alt="" />
+        <p>خانه وآشپزخانه</p></a
+      >
+      <a href=""
+        ><img src="./media/d2.webp" alt="" />
+        <p>کالای دیجیتال</p></a
+      >
+      <a href=""
+        ><img src="./media/d9.webp" alt="" />
+        <p>ورزش وسفر</p></a
+      >
+      <a href=""
+        ><img src="./media/d10.webp" alt="" />
+        <p>ابزارآلات وتجهیزات</p></a
+      >
+      <a href=""
+        ><img src="./media/d4.webp" alt="" />
+        <p>مدوپوشاک</p></a
+      >
+      <a href=""
+        ><img src="./media/d11.webp" alt="" />
+        <p>خودرو,موتورسیکلت</p></a
+      >
+      <a href=""
+        ><img src="./media/d12.webp" alt="" />
+        <p>محصولات بومی ومحلی</p></a
+      >
+    </div>
+    <div class="mt">
+      <img src="./media/bb.webp" alt="" />
+      <img src="./media/ba.webp" alt="" />
+    </div>
+    <div class="align">
+      <h2>پیشنهاد دیجی کالا</h2>
+    </div>
+    <div class="rectangle">
+      <div class="rec">
+        <img src="./media/a1.jpg" alt="" />
+        <h4>گوشی موبایل</h4>
+      </div>
+      <div class="rec">
+        <img src="./media/a2.jpg" alt="" />
+        <h4>دفتر</h4>
+      </div>
+      <div class="rec">
+        <img src="./media/a3.png" alt="" />
+        <h4>موتورسیکلت</h4>
+      </div>
+      <div class="rec">
+        <img src="./media/a4.jpg" alt="" />
+        <h4>اسپیکر(بلندگو)</h4>
+      </div>
+      <div class="rec">
+        <img src="./media/a5.webp" alt="" />
+        <h4>کنسول خانگی</h4>
+      </div>
+      <div class="rec">
+        <img src="./media/a6.jpg" alt="" />
+        <h4>لپ تاپ</h4>
+      </div>
+      <div class="rec">
+        <img src="./media/a7.jpg" alt="" />
+        <h4>ساعت هوشمند</h4>
+      </div>
+      <div class="rec">
+        <img src="./media/a8.jpg" alt="" />
+        <h4>هدفون,هدست</h4>
+      </div>
+      <div class="rec">
+        <img src="./media/a9.png" alt="" />
+        <h4>واکس,پولیش</h4>
+      </div>
+      <div class="rec">
+        <img src="./media/a10.jpg" alt="" />
+        <h4>کیف وکاورگوشی</h4>
+      </div>
+    </div>
+    <div class="center">
+      <p>محبوب ترین برندها <img src="./media/svgexport-30.svg" alt="" /></p>
+    </div>
+    <div class="ra">
+      <img src="./media/n1.png" alt="" />
+      <img src="./media/n2.png" alt="" />
+      <img src="./media/n3.png" alt="" />
+      <img src="./media/n4.png" alt="" />
+      <img src="./media/n5.png" alt="" />
+      <img src="./media/n6.png" alt="" />
+      <img src="./media/n7.png" alt="" />
+      <img src="./media/n8.png" alt="" />
+    </div>
+    <div class="mt5">
+      <img src="./media/46.webp" alt="" />
+      <img src="./media/78.webp" alt="" />
+    </div>
+    <div class="grid">
+      <div class="colu">
+        <div class="h3">
+          <h4>گوشی موبایل</h4>
+          <p>براساس بازدیدهای شما</p>
+        </div>
+        <img src="./media/h1.jpg" alt="" />
+        <img src="./media/h2.jpg" alt="" />
+        <img src="./media/h3.jpg" alt="" />
+        <img src="./media/h4.jpg" alt="" />
+      </div>
+      <div class="colu">
+        <div class="h3">
+          <h4>کیف وکاورگوشی</h4>
+          <p>براساس بازدیدهای شما</p>
+        </div>
+        <img src="./media/h5.jpg" alt="" />
+        <img src="./media/h6.jpg" alt="" />
+        <img src="./media/h7.jpg" alt="" />
+        <img src="./media/h8.jpg" alt="" />
+      </div>
+      <div class="colu">
+        <div class="h3">
+          <h4>هدفون,هدست وهندزفری</h4>
+          <p>براساس بازدیدهای شما</p>
+        </div>
+        <img src="./media/h9.jpg" alt="" />
+        <img src="./media/h10.jpg" alt="" />
+        <img src="./media/h11.jpg" alt="" />
+        <img src="./media/h12.jpg" alt="" />
+      </div>
+      <div class="colu">
+        <div class="h3">
+          <h4>ساعت هوشمند</h4>
+          <p>براساس بازدیدهای شما</p>
+        </div>
+        <img src="./media/h13.jpg" alt="" />
+        <img src="./media/h14.jpg" alt="" />
+        <img src="./media/h15.jpg" alt="" />
+        <img src="./media/h16.jpg" alt="" />
+      </div>
+    </div>
+    <div class="w5">
+      <div class="w6">
+        <h4>ارسال فوری رایگان</h4>
+        <img src="./media/s7.jpg" alt="" />
+        <img src="./media/s8.jpg" alt="" />
+        <img src="./media/s9.jpg" alt="" />
+        <img src="./media/s10.jpg" alt="" />
+        <img src="./media/s11.jpg" alt="" />
+        <img src="./media/s12.jpg" alt="" />
+      </div>
+      <div class="w7">
+        <h4>هدیه نقدی</h4>
+        <img src="./media/s1.jpg" alt="" />
+        <img src="./media/s2.jpg" alt="" />
+        <img src="./media/s3.jpg" alt="" />
+        <img src="./media/s4.jpg" alt="" />
+        <img src="./media/s5.jpg" alt="" />
+        <img src="./media/s6.jpg" alt="" />
+      </div>
+      <div class="w8">
+        <div class="ss">
+          <img src="./media/loggg.svg" alt="" />
+          <p>خدمات ویژه برای اعضای دیجی پلاس</p>
+          <a href="./media/svgexport-20 (1).svg">عضویت</a>
+        </div>
+      </div>
+    </div>
+    <div class="bag">
+      <div class="bag1">
+        <h4>آشنایی با فنون</h4>
+        <p>براساس بازدیدهای شما</p>
+      </div>
+      <div class="bag1">
+        <h4>سایرلوازم خودرو</h4>
+        <p>براساس بازدیدهای شما</p>
+      </div>
+      <div class="bag1">
+        <h4>لپ تاپ والترابوک</h4>
+        <p>براساس بازدیدهای شما</p>
+      </div>
+      <div class="bag1">
+        <h4>دفتر</h4>
+        <p>براساس بازدیدهای شما</p>
+      </div>
+      <div class="bag4">
+        <img src="./media/Scr.png" alt="" />
+      </div>
+    </div>
+    <div class="zah">
+      <img src="./media/lll.webp" alt="" />
+    </div>
+
+    <div class="he">
+      <div class="p">خواندنی ها </div>
+      <span></span> <img src="./media/svgexport-15.svg" alt="">مطالب بیشتردردیجی کالامگ </span>
+    </div>
+    <div class="ab">
+      <a href=""><img src="./media/x1.jpg" alt=""> <p>بررسی هدفون جی بی ال صدای خوب و خوش ساخت</p></a>
+      <a href=""><img src="./media/x2.jpg" alt=""> <p>بررسی بردگیم هیولای توپی یک بازی مهارتی برای بچه ها</p></a>
+      <a href=""><img src="./media/x3.jpg" alt=""> <p>بررسی شارژربی سیم سامسونگ کوچک وکارراه انداز</p></a>
+      <a href=""><img src="./media/x4.jpg" alt=""> <p>ویدیوی رسمی ماموریت فضایی ناسابه فرماندهی یاسمین مقبلی را ببینید</p></a>
+    </div>
+    <div class="jc">
+      <img src="./media/digiiiiiiiii.svg" alt="">
+      <div class="button">
+        <span>بازگشت به بالا <img src="./media/svgexport-45.svg" alt=""></span>
+      </div>
+    </div>
+    <div class="p3"><p>تلفن پشتیبانی -61930000 02</p>
+      <h2>روزهفته 24 ساعته پاسخگوی شما هستیم </h2>
+    </div>
+    <div class="picture2">
+      <a href=""><img src="./media/x7.svg" alt=""> <p>امکان تحویل اکسپرس</p></a>
+      <a href=""><img src="./media/x8.svg" alt=""> <p>امکان پرداخت در محل</p></a>
+      <a href=""><img src="./media/x9.svg" alt=""> <p>7روزهفته 24ساعته</p></a>
+      <a href=""><img src="./media/x10.svg" alt=""> <p>هفت روز ضمانت بازگشت کالا</p></a>
+      <a href=""><img src="./media/x11.svg" alt=""> <p>ضمانت اصل بودن کالا</p></a>
+    </div>
+    <div class="lbox">
+      <div class="set1">
+        <h4>همراه ما باشید!</h4>
+        <div class="line3">
+          <img src="./media/svgexport-51.svg" alt="">
+          <img src="./media/svgexport-52.svg" alt="">
+          <img src="./media/svgexport-53.svg" alt="">
+          <img src="./media/svgexport-54.svg" alt="">
+        </div>
+        <h5>با ثبت ایمیل,ازجدیدترین تخفیف هاباخبرشوید.</h5>
+        <div class="form1">ایمیل شما</div>
+
+      </div>
+      <div class="set2">
+        <h4>راهنمای خرید از دیجی کالا</h4>
+        <p>نحوه ثبت سفارش</p>
+        <p>رویه ارسال سفارش</p>
+        <p>شیوه های پرداخت</p>
+      </div>
+      <div class="set3">
+        <h4>خدمات مشتریان</h4>
+        <p>پاسخ به پرسش های متداول</p>
+        <p>رویه های بازگرداندن کالا</p>
+        <p>شرایط استفاده </p>
+        <p>حریم خصوصی</p>
+        <p>گزارش باگ</p>
+      </div>
+      <div class="set4">
+        <h4>بادیجی کالا</h4>
+        <p>اتاق خبردیجی کالا</p>
+        <p>فروش در دیجی کالا</p>
+        <p>فرصت های شغلی</p>
+        <p>گزارش تخلف در دیجی کالا</p>
+        <p>تماس با دیجی کالا</p>
+        <p>درباره دیجی کالا</p>
+      </div>
+    </div>
+    <div class="select2">
+      <div class="lines">
+        <img src="./media/u4.svg" alt="">
+        <img src="./media/u2.svg" alt="">
+        <img src="./media/u3.svg" alt="">
+        <img src="./media/u1.svg" alt="">
+      </div>
+      <div class="linee">
+        <img src="./media/smile.webp" alt="">
+        <h3>دانلوداپلیکیشن دیجی کالا</h3>
+      </div>
+    </div>
+    <div class="seo">
+      <h2>فروشگاه اینترنتی دیجی کالا,بررسی,انتخاب وخرید</h2>
+      <p> یک خرید اینترنتی مطمئن، نیازمند فروشگاهی است که بتواند کالاهایی متنوع، باکیفیت و دارای قیمت مناسب را در مدت زمانی کوتاه به دست مشتریان خود برساند و ضمانت بازگشت کالا هم داشته باشد؛ ویژگی‌هایی که فروشگاه اینترنتی دیجی‌کالا سال‌هاست بر روی آن‌ها کار کرده و توانسته از این طریق مشتریان ثابت خود را داشته باشد.
+        یکی از مهم‌ترین دغدغه‌های کاربران دیجی‌کالا یا هر فروشگاه‌ اینترنتی دیگری، این است که کالای خریداری شده چه زمانی به دستشان می‌رسد. دیجی‌کالا شیوه‌های مختلفی از ارسال را متناسب با فروشنده کالا،‌ مقصد کالا و همچنین نوع کالا در اختیار کاربران خود قرار می‌دهد. هر یک از روش های ارسال دیجی کالا شرایط و ویژگی‌های خاص خود را دارند که ممکن است گاهی برای کاربران جدید، مبهم و پیچیده به نظر برسند. برای آگاهی بیشتر مشتریان از خدمات دیجی‌کالا، این فروشگاه اینترنتی در بخشی از وب‌سایت خود راهنمای کاملی از شیوه‌‌های ارسال را به صورت ساده و به دور از پیچیدگی، قرار داده است که شامل 8 نوع ارسال کالا به روش‌های زیر است: ارسال امروز، دریافت حضوری، دریافت از گنجه، ارسال توسط فروشنده، ارسال عادی، ارسال کالاهای بزرگ، سنگین و فوق سنگین، ارسال سریع سوپرمارکتی، ارسال با پست
+        
+        کدام محصولات در دیجی‌کالا قابل سفارش هستند؟
+        تقریبا می‌توان گفت محصولی وجود ندارد که دیجی‌کالا برای مشتریان خود در سراسر کشور فراهم نکرده باشد. شما می‌توانید در تمامی روزهای هفته و تمامی شبانه روز یا در روزهای خاصی مثل حراج شگفت انگیز دیجی‌کالا که محصولات دارای تخفیف عالی می‌شوند، سفارش خود را به سادگی ثبت کرده و در روز و محدوده زمانی مناسب خود، درب منزل تحویل بگیرید. بعضی از گروه‌های اصلی و زیر مجموعه‌های پرطرفدار محصولات دیجی‌کالا شامل مواردی می‌شود که در ادامه به معرفی آن‌ها می‌پردازیم که امکان ارسال امروز برای آن ها وجود دارد. 
+        
+        کالای دیجیتال
+        انواع گوشی موبایل از برندهای مختلفی مثل آیفون،  گوشی سامسونگ، گوشی نوکیا، گوشی شیائومی، گوشی هواوی، و...، انواع کنسول بازی ps4 و ps5، انواع تبلت‌های پرطرفدار مثل تبلت سامسونگ نوت 10، انواع هندزفری مثل هندزفری بی سیم، تلوزیون از برندهای مختلف مثل تلویزیون سامسونگ، سونی و...، انواع مانیتور، کیس، کیبورد، مودم از برندهای مختلف مثل مودم ایرانسل، آنتن و ... تنها بخشی از محصولاتی هستند که زیر مجموعه کالای دیجیتال در دیجی‌کالا قرار دارند.
+        
+        خودرو، ابزار و تجهیزات صنعتی
+        انواع خودروهای ایرانی و خارجی از برندهای مطرحی مثل هوندا، کیا و...، موتور سیکلت از برندهایی مثل کویر موتور و...، لوازم جانبی خودرو مثل سیستم صوتی تصویر، ضبط و...، لوازم یدکی مثل دیسک و صفحه کلاج و... و لوازم مصرفی خودرو مثل کفپوش سانا در این گروه قرار می‌گیرند.
+        
+        مد و پوشاک
+        محصولاتی مثل انواع لباس مثل لباس مجلسی زنانه و مردانه، لباس راحتی، لباس ورزشی، اکسسوری، کیف، کفش، عینک آفتابی، لباس زیر، شال و روسری و... جزو مواردی هستند که می‌توانید آن‌ها را از برندهای مطرح ایرانی و خارجی موجود در دیجی کالا مثل آدیداس، نایکی، دبنهامز، آلدو، درسا و... خریداری کنید.
+        
+        اسباب بازی کودک و نوزاد
+        در این دسته از کالاهای دیجی‌کالا، انواع لوازم بهداشتی و حمام کودک و نوزاد، انواع پوشاک و کفش، تبلت، اسباب‌بازی، لوازم اتاق خواب کودک، لوازم ایمنی، لوازم شخصی و غذا خوری و ... قرار می‌گیرد تا خرید را برای پدر و مادرها به کاری سریع و آسان تبدیل کند.
+        
+        کالاهای سوپر مارکتی
+        هر چیزی از مواد خوراکی که به آن نیاز دارید، در سوپرمارکت دیجی‌کالا پیدا می‌شود، محصولات پرطرفداری مثل کره بادام‌زمینی، عسل، سس، قهوه، زعفران، شکلات، انواع نان و ... از برندهای معتبر و معروفی مثل نستله، نوتلا، استارباکس، مزمز، چی توز و ... همگی در اختیار شما هستند و تا رسیدن به آشپزخانه شما تنها چند کلیک فاصله دارند.
+        
+        زیبایی و سلامت
+        انواع لوازم آرایش مثل لاک، رنگ مو، لوازم آرایش لب، چشم، صورت و... همگی در دیجی‌کالا موجود هستند. همچنین محصولات بهداشتی مثل انواع شامپو، کرم، ماسک صورت، ضد تعریق، ماسک مو  و...، انواع لوازم شخصی برقی، ست هدیه، بهترین انواع عطر و اسپری، انواع زیورآلات طلا و نقره مثل سرویس طلا، سرویس نقره و... به همراه وسایل مراقبت شخصی طبی در گروه زیبایی و سلامت دیجی‌کالا قرار می‌گیرد. در این بخش برندهای مطرحی مثل اسنس، پنبه ریز، سینره و... حضور دارند.
+        
+        خانه و آشپزخانه
+        یکی از متنوع‌ترین بخش‌های دیجی‌کالا، بخش لوازم خانه و آشپزخانه است که از محصولاتی مثل صندلی گیمینگ در بخش صندلی‌ها گرفته تا انواع مبل راحتی، انواع آبگرمکن مثل آبگرمکن بوتان، لباسشویی‌های متنوع مثل انواع لباسشویی اسنوا، شیرآلات مختلف مثل شیرآلات قهرمان و...، ظروف و همچنین لوازم برقی آشپزخانه مثل توستر و... را شامل می‌شود و امکان خریدی عالی را برای مشتریان فراهم کرده است. در بخش لوازم خانگی دیجی‌کالا، برندهای معتبری مثل تفال، اخوان، فیلیپس، ال جی، اسنوا، جی پلاس و... حضور دارند.
+        
+        کتاب، لوازم تحریر و هنر
+        بخش هنر، کتاب، رمان و لوازم تحریر دیجی‌کالا نیز یکی از متنوع‌ترین بخش‌های این فروشگاه اینترنتی است. انواع کتاب و مجله، کتاب زبان، بازی، لوازم تحریر با طرح‌های مختلف مانند دختر کفشدوزکی، سازهایی مثل پیانو، سنتور، هنگ درام  و... با بهترین قیمت‌ها و از بهترین برندها در دسترس شما قرار دارند.
+        
+        ورزش و سفر
+        هر نوع وسیله و لباس ورزشی که فکرش را کنید، انواع وسایل کمپینگ و کوهنوردی، ساک و قمقمه ورزشی و... در این بخش قرار می‌گیرند. همچنین شما می‌توانید وسایل مد نظر خود را بر اساس نوع ورزش (آبی، هوازی، بدنسازی و...) در دسته‌بندی‌های دیجی‌کالا پیدا کنید.
+        
+        محصولات بومی و محلی
+        و در آخر دیجی‌کالا از طریق به فروش رساندن محصولات بومی و سنتی متفاوتی مثل انواع خوراکی، گلیم و گبه، ابزار و ... تلاش کرده تا بین هنر ایرانی و متقاضیان آن کوتاه‌ترین راه را پیدا کند. در این بخش شما می‌توانید انواع محصولات از جمله ظروف زیبای مخصوص به سفره هفت‌سین  و پذیرایی از مهمانان در روزهای نوروز، انواع آیینه و شمعدان و هر آن چیزی را که برای خلق زیبایی در روزهای بهاری به آن نیاز دارید، با قیمت مناسب و تنوع بسیار بالا انتخاب کنید. همچنین در صفحه برچسب ها، امکان مشاهده و خرید انواع محصولات با طرح های بومی وجود دارد.  دیجی‌کالا همچنین برای اینکه حال و هوای عید را به اعضای خود هدیه کند، تقویم ۱۴۰۱، انواع ایده عکس پروفایل عید نوروز، آهنگ‌های عید نوروز و موزیک‌های شاد بهاری، وسایل مربوط به خانه‌تکانی و انواع لباس های عید  را برای شما فراهم کرده است تا بتوانید در کنار خرید خود، از این حال و هوای تازه نهایت لذت را ببرید.
+        
+        گزارش های سالیانه دیجی کالا
+        در راستای توجه ویژه به شفافیت به عنوان یکی از اصلی‌ترین ارزش‌های محوری دیجی‌کالا، با شروع سال ۱۳۹۸ داستان‌پردازی با داده‌های آماری و ارائه گزارش‌های سالانه آغاز شد. مسیری که دستاورد آن تا امروز چندین گزارش سالانه و تخصصی مثل گزارش سالانه ۱۳۹۸، گزارش سالانه ۱۳۹۹ و گزارش سالانه ۱۴۰۰  دیجی‌کالا هستند. علاوه بر این، گزارش منابع انسانی سال ۱۳۹۹، گزارش منابع انسانی سال ۱۴۰۰  و همچنین گزارش کتاب دیجی‌کالا، از دیگر گزارش‌های تخصصی دیجی‌کالا به حساب می‌آیند. انتشار این گزارش‌ها امکان رصد شفاف‌تر و دقیق‌تر خدمات دیجی‌کالا را فراهم می‌کند، وضعیت بازار آنلاین کشور را به نمایش می‌گذارد و به تمامی کسب‌وکارهای ایرانی کمک می‌کند تا با فرایندهای فروش و عرضه آنلاین کالاهای خود بیشتر آشنا شوند.</p>
+    </div>
+    <div class="full7">
+      <img src="./media/rez1.webp" alt="">
+      <img src="./media/rez2.webp" alt="">
+      <img src="./media/rez3.webp" alt="">
+    </div>
+    <br>
+    <div class="text1">
+      <p> برای استفاده از مطالب دیجی‌کالا، داشتن «هدف غیرتجاری» و ذکر «منبع» کافیست. تمام حقوق اين وب‌سايت نیز برای شرکت نوآوران فن آوازه (فروشگاه آنلاین دیجی‌کالا) است.
+      </p>
+    </div>
+    <div class="end">
+      <img src="./media/ch1.svg" alt="">
+      <img src="./media/ch2.svg" alt="">
+      <img src="./media/ch3.svg" alt="">
+      <img src="./media/ch4.svg" alt="">
+      <img src="./media/ch5.svg" alt="">
+      <img src="./media/ch6.svg" alt="">
+      <img src="./media/ch7.svg" alt="">
+      <img src="./media/ch8.svg" alt="">
+      <img src="./media/ch9.svg" alt="">
+      <img src="./media/ch10.svg" alt="">
+      <img src="./media/ch11.svg" alt="">
+      <img src="./media/ch12.svg" alt="">
+      <img src="./media/ch13.svg" alt="">
+      <img src="./media/ch14.svg" alt="">
+    </div>
+
+    <!--end project-->
+  </body>
+</html>
